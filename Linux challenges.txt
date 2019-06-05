@@ -1,0 +1,52 @@
+* Task 1 *
+
+cd ~/Desktop/
+mkdir myProject
+cd myProject/
+touch app.js
+cd ..
+mkdir myProject2
+cp myProject/app.js myProject2
+
+* Task 2 *
+
+touch exercise.txt
+mv exercise.txt /tmp
+rm /tmp/exercise.txt
+
+* Task 3 *
+
+echo 'Content of your choice' >> umuzi.txt
+echo 'Content of choice' >> recruits.txt
+echo 'Content choice' >> cohort.txt
+cat umuzi.txt cohort.txt recruits.txt > summary.txt
+cat >> summary.txt
+    Summary text
+
+* Task 4 *
+
+locate "umuzi"
+locate "umuzi" > search_result.txt
+
+* Task 5 *
+
+cd ~/Documents/
+touch pad.txt
+cd ~/Desktop/
+mkdir work
+cd work
+cat ~/Documents/pad.txt > pad_copy.txt
+sudo updatedb
+cd -
+locate 'pad_copy.txt'
+
+* Task 6 *
+
+find / -iname '*.pdf'
+find / -iname '*.pdf' -exec cp {} ~/Desktop/find_results/ \;
+find . -mtime -1 -print
+
+* Task 10 *
+
+my_bio.txt
+mkdir my_files && mv my_bio.txt my_files/
